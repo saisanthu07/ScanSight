@@ -1,0 +1,17 @@
+{
+  "name": "scansight",
+  "version": "1.0.0",
+  "description": "ScanSight — AI-Powered Medical Imaging Platform",
+  "private": true,
+  "scripts": {
+    "install:all": "npm install --prefix api && npm install --prefix client",
+    "dev:api": "npm run dev --prefix api",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix api"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
