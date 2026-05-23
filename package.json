@@ -9,7 +9,8 @@
     "dev:client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
     "build": "npm run build --prefix client",
-    "start": "npm start --prefix api"
+    "start": "npm start --prefix api",
+    "start:all": "concurrently \"npm run start --prefix api\" \"npm run preview --prefix client\""
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
